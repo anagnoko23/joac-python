@@ -1,11 +1,9 @@
 #! /usr/bin/python
 #!-*-coding: utf8-*-
-
 import random
 import os
 import time
 import copy
-
 class Square:
     """This is the abstraction of one Square"""
     def __init__(self, x, y, attrib):
@@ -121,7 +119,7 @@ if __name__ == '__main__':
     for b in xrange(1, limit + 1):
         time.sleep(0.5)   
         a = raw_input('_#: ')
-  #      a = random.choice(tokens)
+        #a = random.choice(tokens)
         screen.update(a)
         os.system('clear')
         print screen
